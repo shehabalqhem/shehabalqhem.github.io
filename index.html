@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="متجر Shehab Alqhem - متجر إلكتروني عصري">
+<title>Shehab Alqhem | المتجر</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="nav">
+<a class="brand" href="#home"><span class="mark">S</span><span>Shehab <b>Alqhem</b></span></a>
+<button class="menu" id="menu">☰</button>
+<div class="navlinks" id="navlinks">
+<a href="#home">الرئيسية</a><a href="#products">المنتجات</a><a href="#about">من نحن</a><a href="#contact">تواصل معنا</a>
+</div>
+<button class="cart" id="cartOpen">🛒 السلة <i id="count">0</i></button>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-inner">
+<div class="hero-copy">
+<span class="tag">مرحبًا بك في متجرنا</span>
+<h1>تسوق بسهولة.<br><em>اختر بثقة.</em></h1>
+<p>منتجات مختارة بعناية، تجربة شراء بسيطة، وتصميم سريع يعمل على الهاتف والكمبيوتر.</p>
+<div class="actions"><a class="btn" href="#products">تصفح المنتجات</a><a class="ghost" href="#contact">تواصل معنا</a></div>
+</div>
+<div class="hero-art">
+<div class="circle"></div>
+<img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1100&q=85" alt="تسوق">
+</div>
+</div>
+</section>
+
+<section class="section" id="products">
+<div class="heading"><span class="tag">منتجاتنا</span><h2>منتجات مميزة لك</h2><p>يمكنك تعديل الأسماء والأسعار والصور من ملف <b>script.js</b>.</p></div>
+<div class="grid" id="productsGrid"></div>
+</section>
+
+<section class="section about" id="about">
+<div class="about-card"><div><span class="tag">من نحن</span><h2>متجر بسيط، تجربة أفضل.</h2><p>هذا قالب متجر إلكتروني جاهز يمكنك تخصيصه لعلامتك التجارية وإضافة منتجاتك وأسعارك وبيانات التواصل.</p></div><div class="numbers"><div><b>24/7</b><small>متاح للطلب</small></div><div><b>100%</b><small>تصميم متجاوب</small></div><div><b>سهل</b><small>التخصيص</small></div></div></div>
+</section>
+
+<section class="section contact" id="contact">
+<div class="heading"><span class="tag">تواصل معنا</span><h2>هل لديك سؤال؟</h2><p>أرسل بياناتك وسنجهز طلبك.</p></div>
+<form id="contactForm" class="form">
+<input name="name" placeholder="الاسم" required><input name="phone" placeholder="رقم الهاتف" required>
+<textarea name="message" placeholder="رسالتك" required></textarea><button class="btn" type="submit">إرسال</button>
+<p id="contactMsg"></p>
+</form>
+</section>
+</main>
+
+<aside class="drawer" id="drawer">
+<div class="drawer-head"><h2>سلة المشتريات</h2><button id="cartClose">×</button></div>
+<div id="cartItems"></div>
+<div class="total"><span>الإجمالي</span><strong id="total">0 ر.ي</strong></div>
+<button class="btn wide" id="checkout">إتمام الطلب</button>
+</aside>
+<div class="shade" id="shade"></div>
+
+<div class="modal" id="modal">
+<div class="modal-box">
+<button class="x" id="modalClose">×</button>
+<span class="tag">إتمام الطلب</span><h2>بيانات التوصيل</h2>
+<form id="orderForm">
+<input name="name" placeholder="الاسم الكامل" required>
+<input name="phone" placeholder="رقم الهاتف" required>
+<input name="address" placeholder="العنوان بالتفصيل" required>
+<textarea name="notes" placeholder="ملاحظات (اختياري)"></textarea>
+<div class="order-total">الإجمالي: <b id="modalTotal">0 ر.ي</b></div>
+<button class="btn wide">حفظ الطلب</button>
+<p id="orderMsg"></p>
+</form>
+</div></div>
+
+<footer><div>© <span id="year"></span> Shehab Alqhem</div><a href="#home">العودة للأعلى ↑</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
