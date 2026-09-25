@@ -1,1 +1,17 @@
-# shehabalqhem.github.io
+# Shehab — بناء APK من الهاتف
+
+هذه النسخة مجهزة للبناء عن بُعد باستخدام GitHub Actions، لذلك لا تحتاج إلى Android Studio.
+
+## من الهاتف
+1. أنشئ حسابًا في GitHub من Chrome إذا لم يكن لديك حساب.
+2. أنشئ Repository جديدًا، مثل: `Shehab`.
+3. ارفع ملفات هذا المشروع إليه، أو ارفع ملف ZIP ثم فك الضغط داخل المستودع.
+4. افتح تبويب **Actions**.
+5. اختر **Build Shehab APK**.
+6. اضغط **Run workflow**.
+7. بعد انتهاء البناء، افتح الـworkflow الناجح ثم قسم **Artifacts**.
+8. حمّل `Shehab-debug-apk.zip`، وفك ضغطه لتحصل على `app-debug.apk`.
+9. افتح APK على هاتفك واسمح بالتثبيت من هذا المصدر عند طلب Android.
+
+## تنبيه
+هذه طريقة بناء Debug للتجربة. قبل النشر على Google Play نحتاج توقيع Release وإعداد صفحة المتجر وسياسة الخصوصية.

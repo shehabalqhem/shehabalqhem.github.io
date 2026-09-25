@@ -1,0 +1,9 @@
+<resources>\n<color name="splash_bg">#FFF0F6</color>
+<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:fontFamily">sans</item>
+    <item name="android:colorAccent">#8B1E5A</item>
+    <item name="android:navigationBarColor">#FFFFFF</item>
+    <item name="android:statusBarColor">#FFFFFF</item>
+    <item name="android:windowLightStatusBar">true</item>
+</style>
+</resources>
